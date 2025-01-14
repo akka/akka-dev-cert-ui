@@ -21,9 +21,15 @@ The application is built using React and includes real-time updates of reservati
 
 # Getting Started
 
-Follow these steps to run the application locally on your machine:
+Follow these steps to run the application locally on your machine.
 
 ## Running the Akka app locally or on the platform
+
+Clone the companion project [akka-dev-cert](https://github.com/akka/akka-dev-cert.git).
+
+Follow the steps provided in that repo's README for developing and running the certification service.
+
+When your Akka service is up and running, follow the steps below to run the UI.
 
 ## Running the UI
 
@@ -34,8 +40,8 @@ Follow these steps to run the application locally on your machine:
 2. **Clone the Repository**
 
    ```bash
-   git clone [repository-url]
-   cd [repository-name]
+   git clone https://github.com/akka/akka-dev-cert-ui.git
+   cd akka-dev-cert-ui
    ```
 
 3. **Install Dependencies**
@@ -52,9 +58,16 @@ Follow these steps to run the application locally on your machine:
    npm run dev
    ```
 
-5. **Access the Application**
+5. **Access the Application Locally**
    - Open your web browser
    - Navigate to `http://localhost:3000`
+   - You should now see the application running
+
+6. **Access the Application running on the Akka platform
+   - Create an externally accessible hostname using the `akka services expose` command
+   - Use the `akka services get akka-dev-cert` command to get the hostname of your service
+   - Open your web browser
+   - Navigate to `http://localhost:3000?host=[hostname]`
    - You should now see the application running
 
 The development server will automatically reload if you make any changes to the source files.
