@@ -1,5 +1,5 @@
 
-# Flight Scheduling UI
+# Flight Scheduler UI
 
 This is a web application for scheduling and managing flight reservations. The UI provides:
 
