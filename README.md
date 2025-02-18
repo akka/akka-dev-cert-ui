@@ -82,3 +82,7 @@ If you encounter any issues:
 2. Try deleting the `node_modules` folder and `package-lock.json` file, then run `npm install` again
 3. Ensure no other applications are running on port 3000
 4. Check the terminal for error messages
+
+## Caveat Emptor
+
+This repository and its code are provided as-is and are not covered by Akka security policies. There are no guarantees of security, stability, or support. Use at your own risk.
